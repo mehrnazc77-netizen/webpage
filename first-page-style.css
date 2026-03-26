@@ -1,0 +1,288 @@
+@charset "utf-8";
+@font-face {
+    font-family: Quicksand;
+    src: url('Quicksand-Regular.woff') format('woff'),
+         url('Quicksand-Regular.ttf') format('truetype');
+}
+
+
+
+  
+/* Remove default spacing */
+body {
+  min-width: 300;
+  max-width: 1420px;
+  margin: 0 auto; /* centers the page */
+  font-family: Arial, sans-serif;
+  background-color: rgb(237, 184, 212);
+}
+
+p {
+  margin-bottom: 60px;
+  margin-left: 10px;
+}
+
+/* Navbar styling */
+nav {
+  width: auto;
+  display: flex;               /* Makes h1 + ul side by side */
+  align-items: center;         /* Vertically center */
+  justify-content: space-between; /* Space between title & links */
+  background-color: #f2eeee;
+  padding: 10px 20px;
+  background: linear-gradient(345deg, #bc98b7, rgb(170, 105, 170)70%);
+}
+
+/* Remove bullet points */
+nav ul {
+  list-style: none;
+  display: flex;   /* Makes links horizontal */
+  margin: 0;
+  padding: 0;
+ 
+}
+.logo {
+  
+  height:40px;   /* try 20–28px depending on look */
+  width: auto;
+}
+
+nav h1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+                       
+nav ul li {
+  margin-left: 55px;    /* Space between links */
+}
+
+nav h1
+{
+  color: black;
+  font-size: 24px;
+}
+/* Link styling */
+nav a {
+  text-decoration: none;
+  color: rgb(4, 4, 4);
+  font-size: 18px;
+  
+}
+
+a:hover {
+  color: rgb(8, 65, 141);
+  text-decoration: underline;
+}
+ a:visited {
+  color: rgb(158, 21, 146);
+}
+
+/* Style for the heading */
+.intro {
+ 
+  display: flex;         
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 10px;       /* 10px space under nav bar */
+  font-size: 18px;
+  line-height: 1.5; 
+  padding-left: 20px; /* optional spacing from left side */
+  flex-wrap: wrap;   /* allows stacking on small screens */
+  gap: 20px;
+}
+
+.intro-text {
+  width: 60%;
+  flex: 1 1 300px;  /* flexible sizing */
+}
+
+
+.intro-image {
+  position: relative;
+  max-width: 45%;
+  height: auto;
+  margin-right: 10px; /* space from right edge of the page */
+  margin-left: 25px; /* space from text */
+  margin-bottom: 25px; /* space from bottom of the page */
+  flex: 1 1 300px;  /* flexible sizing */
+}
+  
+
+
+.intro-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 2px solid rgb(229, 15, 126);
+  border-radius: 5px;
+  
+  
+}
+
+.hobbies { 
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* allows items to wrap to the next line on smaller screens */
+  gap: 65px;
+}
+
+.hobbies-pic {
+ max-width: 50%;
+  height: auto;
+  align-items: center;
+  margin-bottom: 10px; /* space from bottom of the page */
+  margin-left: 30px; /* space from left edge of the page */
+  flex: 1 1 300px;
+}
+
+.hobbies-pic img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+.page {
+    background-color: rgba(240, 191, 201, 0.462);  
+}
+
+
+.hobbies-content {
+  font-size: 18px;
+  line-height: 1.5;       /* increases space between lines */
+  color: black;
+  flex: 1 1 300px;
+}
+
+
+.title {
+  font-weight: bold;     /* makes the first line bold */
+  list-style-type: none; /* removes the bullet */
+  font-size: 18px;
+  line-height: 2.5;
+  color : rgba(18, 10, 226, 0.462);
+}
+
+ footer {
+  background-color: #af5cab;   /* light gray background */
+  padding: 5px 20px;
+  margin-top: auto;  
+  clear : both; /* ensures footer is below floated content */
+}
+
+.footer-items {
+  display: flex;              /* align image and text in a row */
+  justify-content: flex-end;  /* move content to the right side */
+  align-items: center;        /* vertically center the image and text */
+  gap: 10px;                  /* space between text and image */
+}
+
+.footer-items img {
+  height: 60px;
+  border: none;                 /* remove border if browser adds one */
+  cursor: pointer;              /* shows pointer on hover */
+  transition: transform 0.3s; 
+  width: auto;
+ 
+}
+
+.footer-items img:hover {
+  transform: scale(1.1);        /* slightly enlarge image on hover */
+}
+
+.hike-image img {
+  width: 300px;        /* small image */
+  float: left;      /* text wraps around the picture */
+  margin: 10px 20px 10px 0;
+  margin-left: 10px;  /* space between image and text */
+}
+
+.skate-image img {
+  width: 500px;        /* small image */
+  float: right;      /* text wraps around the picture */
+  margin-right: 10px;   /* space between image and text */
+}
+
+.hike-image {
+font-size: 18px;
+line-height: 2.5;
+color: black;
+margin-left: 10px;
+margin: 10px 20px 10px 0;
+ margin-right: 10px;
+ margin-left: 20px;
+}
+
+
+.skate-image {
+  font-size: 18px;
+  line-height: 2.5;
+  color: black;
+  margin: 10px 20px 10px 0;
+ margin-right: 10px;
+ margin-left: 20px;
+}
+
+.skate-image h3 {
+    margin-left: 10px; /* remove default top margin */
+   
+}
+
+
+.birthday img {
+  width: auto;        /* small image */       
+  float: right;      /* text wraps around the picture */
+  margin-right: 10px;   
+  margin-top: 5px ;
+}
+.birthday h2 {
+   margin-left: 10px;
+}
+.birthday p {
+  margin-left: 10px;
+  margin-right: 10px;
+  line-height:2.5 ;}
+
+.audio {
+  display:  block;
+  margin-left: 300px; /* centers the audio player */
+}
+
+.video {
+    width: 700px;
+   margin-left: 20px;
+    border: 3px solid black;
+}
+
+
+@media (min-width: 300px) and (max-width: 799px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro {
+    flex-direction:column ;
+  }
+  .hobbies {
+    flex-direction: column;
+  }
+}
+  
+
+
+@media (min-width: 800px) and (max-width: 1400px) {
+  nav ul{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .intro{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .hobbies {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
